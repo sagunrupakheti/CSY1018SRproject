@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobs</title>
+	<link rel="icon" type="images/ico" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" class="logo" alt = "headerLogo">
+	</header>
+	<div class="navigation">
+		<a href="index.html"><p class="new"><img src = "home.png" class = "navImg" alt = "homeimage">Home </p></a>
+		<a href="reviews.html" ><p class="new">Reviews </p></a>
+		<a href="glossary.html"><p class="new"> Glossary </p></a>
+		<a href="jobs.html" class = "selected"><p class="new">Jobs </p></a>
+		<a href="tutorials.html"><p class="new">Tutorials </p></a>
+	</div>
+	<!-- a div container compare made inside which 2 div class jobs made one which contains written content and 
+	another div class jobs contains image  -->
+	<div class="compare">
+		<div class="jobs">	
+			<div class = "jobText">	
+				<!--information on this job extracted from: https://www.glassdoor.com/Job/sunnyvale-ux-designer-jobs-SRCH_IL.0,9_IC1147442_KO10,21.htm?rdserp=true&jl=3148764502&guid=0000016a64db313d833574c12cf3773a&pos=101&src=GD_JOB_AD&srs=EI_JOBS&s=21&ao=400784 -->
+				<h1>Technical UX Designer</h1><hr><br>
+				<p>Company : Apple <br> Post : Software Engineer <br> Rating : 4.0  <br> Requirements : Senior level experience (5+ years) crafting user experience solutions and applications for 3D application and/or games<br> Salary : $128,852 <br> Reviews: <br> Pros : You work with highly educated people with drive<br> Cons :Labs are too far apart <br> Benefits : Employee discount, Health insurance, 401K plan</p>
+			</div>
+		</div>
+		<div class="jobs">
+			<img src = "images/apple.jpg" alt = "applelogo">
+		</div>
+	</div>
+
+	<div class="compare">
+		
+		<div class="jobs">
+			<img src = "images/google.jpg" alt = "googlelogo">
+		</div>
+		<div class="jobs">
+			<div class = "jobText">	
+				<!-- information on this job extracted from: https://www.glassdoor.com/Job/mountain-view-front-end-developer-jobs-SRCH_IL.0,13_IC1147431_KO14,33.htm?rdserp=true&jl=3068507475&guid=0000016a64daea198b90dab38e6627e1&pos=103&src=GD_JOB_AD&srs=EI_JOBS&s=21&ao=37049 -->
+				<h1>UX Engineer, Front End </h1><hr><br>
+				<p>Company : Google <br> Post : Software Engineer <br> Rating : 4.4  <br> Requirements :Experience with modern JavaScript frameworks (such as Backbone, Angular, or Ember) and CSS pre-processing frameworks (such as Sass or Less).<br> Salary : $129,110 <br> Reviews: <br> Pros : Work life balance, good food<br> Cons : pretty relax working at Google <br> Benefits : Free lunch or snacks , Health insurance, 401K Plan</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="suggest">
+	<h1>The Suggestion: </h1>
+	<p>Both the companies are the lead in today's technical world and both the jobs are equally rewarding and beneficial. Comparing both the jobs one of them is clearly a win for us. With much more salary and also the welcoming quality of inexperienced skillfull people, Google is a better choice for inexperienced people however, if in hands are 5 years of experience then Apple is also a smart choice. Even though there is not much of a difference in the salaries, the fact that Google is openly believing to accept not so experienced personals is impressive. This shows how skills are more important than experience.</p>
+	</div>
+	<!-- a form formulated -->
+	<div class="form">
+		<!-- the form validated by using javascripts -->
+		<form onsubmit="return validateForm(this)" method="Post">
+
+			<!-- the form content in div class column1 -->
+			<div class = "column1">
+				<h1 style="text-align: center;">Apply for One of the Jobs</h1>
+				<br>
+				<select>
+					<option>Google</option>
+					<option>Apple</option>
+				</select>
+				<br>
+				<label>First name :</label>
+				<input type="text" required> <br>
+
+				
+				<label>Last name :</label>
+				<input type="text" required><br>
+
+				<label>Gender :</label><br>
+				<input type="radio" name="gender" required>Male<br>
+				<input type="radio" name="gender" required>Female<br>
+
+				<label>Email Address :</label>
+				<input type="text" placeholder="something@example.com" name="email" ><br>
+				<label>Attach your CV :</label>
+				<br><br><input type="file" name="attachment" > 
+
+				<br><br><input type="submit" value="Submit" style="height: 50px;">
+				<br>
+			</div>
+			<!-- the picture in div class column 2 -->
+			<div class = "column2">
+				<!-- From https://stock.adobe.com/be_en/images/job-application-form-resume-cover-letter-clipboard-with-man-profile-icon-and-pen-flat-design-vector-illustration/232881667?asset_id=235372658 -->
+				<img src = "images/jobApplication.jpg" alt = "CV">
+
+			</div>
+
+		</form>
+		<script>
+		function validateForm(validate)  { 
+  
+	  	if ( validate.email.value == "") {
+	    	alert("The email address must be filled out");
+	    	return false;
+	    	}
+	    }
+	</script>
+	</div>
+</body>
+<footer>
+	<br><br>
+	<a href="https://www.facebook.com/sagun.rupakheti"><img src="images/facebook.png" class="icon" alt = "facebook"></a>
+	<a href="https://www.instagram.com/sagun.rupakheti/?hl=en"><img src="images/instagram.png" class="icon" alt = "instagram"></a>
+	<img src="images/twitter.png" class="icon" alt = "twitter">
+	<img src="images/youtube.png"  class="icon" alt = "youtube">
+	<br><br>
+	<p>Copyright &copy; 2019 The ktm times | Made By Sagun.</p>
+	<br><br>
+</footer>
+</html>

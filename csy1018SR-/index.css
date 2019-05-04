@@ -1,0 +1,695 @@
+/*This part shows the basic layout i.e. the header and footer which are the same for all the pages */
+
+
+/*open sans font i.e. one of the google api fonts imported */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/*this part of the css is applied to every element in all the pages*/
+*{
+	margin: 0;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*for the body */
+body{
+	/* for a grey background */
+	background: rgb(220, 220, 220);
+	/*max width used to make the bg always of the same width */
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+header{
+	/*for equal padding on too and bottom */
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 180px;
+	/*image in the header https://images.pexels.com/photos/2040125/pexels-photo-2040125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500*/
+	background-image: url("images/pc.jpg");
+  /* Create the parallax scrolling effect  w3schools.com https://www.w3schools.com/howto/howto_css_parallax.asp*/
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	/*time for transition when hovered*/
+	transition: height .5s;
+}
+
+header:hover{
+	/*height of the header increases creating a better visual effect*/
+	height: 250px;
+}
+
+.logo{
+	width: 180px;
+	margin: auto;
+	display: block;
+  	transition: 0.3s;
+  	/*for the logo content to be properly visible*/
+  	background-color: white;
+ }
+
+ .logo:hover{
+ 	/*increases the size of the logo when hovered*/
+	transform: scale(1.1);
+ }
+
+.navigation{
+	/*the navigation bar remains at the top of the page even when scrolled*/
+  	position: sticky;
+  	font-weight: bold;
+  	list-style: none;
+  	top:0;
+  	/*the content in the navigation bar is ordered in row*/
+	display: flex;
+	flex-direction: row;
+	/*color of the navigation*/
+	background-color: #187795;
+
+	font-size: calc(0.3vw + 20px);
+	color: white;
+	text-align: center;
+	padding: 5px;
+	z-index: 100;
+	margin-bottom: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid grey;
+}
+
+.navImg{
+	width: 30px;
+	margin-top: -10px;
+	transform: translateY(5px) translateX(-10px);
+}
+
+.navigation a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: background 0.2s;
+	width: 19%;
+	margin-left: 1%;
+	border-radius: 10px;
+}
+/*when a page is selected the page's name is highlighted*/
+.navigation .selected{
+	background: lightgreen;
+}
+/*when hovered on the different a of the navigation, the background color changes*/
+.navigation a:hover{
+	background: tomato;
+}
+
+
+/*social media icons*/
+.icon{
+	margin-top: 10px;
+	height: 30px;
+	background-color: white;
+	/*a curved border on the icons*/
+	border-radius: 10px;
+	transition: .3s;
+}
+
+.icon:hover{
+	/*when hovered on the icon, the icon rotates 360 degrees*/
+ 	transform: rotate(360deg);
+}
+
+footer  {
+	/*the bg color is set*/
+	background-color: #187795;
+	/*text is aligned towards the center*/
+	text-align: center;
+	height: 185px;
+	/*font color white*/
+	color: white;
+}
+/******************************The basic layout ends*******************************/
+
+
+/******************************The css for index.html start from here on*********************************/
+
+
+.welcome{
+	/*aligning the text towards the left*/
+  	text-align:left;
+  	/*a minimum height set for the content to cover the entire page*/
+  	min-height: 320px;
+  	/*the padding set to left, right and top and bottom*/
+  	padding: 50px;
+  	padding-left: 100px;
+  	padding-right: 100px;
+  	/*a margin is created around the box*/
+  	margin: 20px;
+  	background: white;
+  	border-radius: 10px;
+}
+
+.team{
+	width: 100%;
+	display: flex;
+	/*aligning the items in a row in flexbox*/
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-image: url("images/pics.jpg");
+  /* Create the parallax scrolling effect  w3schools.com https://www.w3schools.com/howto/howto_css_parallax.asp*/
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+}
+
+
+.teamcard {
+	/*a box like 3D effect created using box shadow by adjusting the shadows */
+  	box-shadow: 1px 5px 9px 0;
+  	transition: 0.3s;
+ 	width: 30%;
+  	background: white;
+}
+
+.teamcard:hover {
+	/*when hovered on teamcard the box shadow deepens*/
+ 	 box-shadow: 0px 9px 19px 0 rgba(0,0,0,0.9);
+}
+
+.textContainer {
+	padding: 2px 16px;
+	background: teal;
+	color: white;
+	text-align: center;
+}
+
+
+/****************************The css for index.html ends********************************/
+
+
+
+
+
+
+/****************************The css for jobs.html starts*******************************/
+
+.compare{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: -20px;
+}
+
+.jobs{
+	width: 50%;
+	/*the gap between lines increased by line height*/
+	line-height: 1.7;
+	background: white;
+}
+
+.jobText{
+	/*padding increased*/
+	padding: 40px;
+}
+
+.jobs img{
+	width: 100%;
+	margin-bottom: -8px;
+
+}
+
+.suggest{
+	width: 100%;
+	/*the parallax image added with linear gradient and rgba adjusted on it to give it a faded look for 
+	the written content to shine*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),url("images/black.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    text-align: center;
+    line-height: 1.7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.suggest img{
+	/*opacity of the image adjusted*/
+	opacity: 0.3;
+}
+.form{
+	/*aligning the form content left*/
+	text-align: left;
+	background: white;
+	width: 100%;
+	margin-bottom: -5px;
+}
+
+.form form {
+	/*flex-box used*/
+	display: flex;
+	flex-direction: row;
+}
+
+
+.form .column1, .form .column2{
+	width: 49%;
+	padding: 1%;
+}
+
+.form .column2{
+	width: 50%;
+	padding: 0;
+}
+
+.form .column2 img{
+	width: 100%;
+}
+
+/*the size and layout changed in the form content*/
+.form input[type=text], .form select{
+	/*calc supports calculation of thw width in which the width is made 10px smaller than the original width*/
+	width: calc(100% - 10px);
+	height: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.form select, .form input[type=submit]{
+	width: calc(100% + 5px);
+	height: 50px;
+}
+
+.form input[type=radio]{
+	width: 50px;
+	height: 20px;
+}
+
+.form label{
+	margin-bottom: 10px;
+}
+
+
+
+/*********************he css for jobs.html page ends******************************/
+
+
+
+
+/*********************The css for reviews.html starts here************************/
+
+.reviewTextHolder{
+	min-height: 500px;
+	padding: 30px;
+	width: calc(100% - 60px);
+	background: white;
+	line-height: 2.2;
+}
+
+.review{
+	display: flex;
+	flex-direction:row;
+	/*calc supports calculation of thw width in which the width is made 20px smaller than the original width*/
+	width: calc(100% - 20px);
+	margin: 10px;
+}
+
+
+.reviewText{
+	width: 50%;
+	/*the top margin adjusted that creates a gap between 2 divs*/
+	margin-top: 50px;
+	/*flexbox adjusted*/
+	display: flex;
+	flex-direction:column;
+}
+
+.reviewImageBox{
+	min-height: 100px;
+	width: 100%;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+/*all the images of the html made the same size*/
+.reviewImage{
+	width: 10%;
+	margin: 1.5%;
+}
+
+.verdict{
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/type.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: white;
+	padding: 90px;
+}
+
+.jsBox{
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(10, 10, 10, 0.5)), url(images/jsframeworks.png);
+	margin-top: -10px;
+	border-top: 10px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+/********************css for reviews.html ends**************************/
+
+
+
+
+/********************css for tutorials.html starts here******************/
+
+.tutorials{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*the video size adjusted*/
+.tutorials iframe{
+	width: calc(100% + 1px);
+	height: 300px;
+	margin: auto;
+	background: white;
+}
+
+/*the description designed*/
+.video, .description{
+	background-color: teal;
+	margin: auto;
+	margin-bottom: 10px;
+	color: white;
+}
+
+/*the frame size and border adjusted*/
+.video{
+	max-width: 32%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	overflow-x: hidden;
+}
+
+
+
+/****************The css for glossary.html starts********************/
+
+
+.newsBox{
+	text-align: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	min-height: 200px;
+}
+
+
+.news1{
+	/*image from https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjo5oLQnYHiAhVTWisKHXnmBfQQjRx6B
+	AgBEAU&url=https%3A%2F%2Fwww.cnet.com%2Fnews%2Fmark-zuckerberg-has-apologized-now-he-has-to-change-facebook-ca
+	mbridge-analytica%2F&psig=AOvVaw0MoU8Lt4ZEL8uG3A0G_0Gl&ust=1557037151888908*/
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/facebook.jpg);
+}
+
+
+
+.news2{
+	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjk5aWT7P_hAhUFEnIKHd6LBWIQjRx6BAgBE
+	AU&url=https%3A%2F%2Fwww.udemy.com%2Fblockchain-cryptocurrency-course-101-for-absolute-beginners%2F&psig=AOvVaw17
+	vsE1IA71alWIDjP6yAd6&ust=1556989522548114*/
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/blockchain.jpg);
+	margin-top: 10px;
+}
+
+.news3{
+	/*image from https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi3xtbWmIHiAhVHrY8KHXloAH
+	oQjRx6BAgBEAU&url=https%3A%2F%2Fnewatlas.com%2Fgoogle-pixel-2-2xl-iphone-x-8-8plus-specs-comparison%2F51629%2F&ps
+	ig=AOvVaw2j02VLiEm7hzrZ7JLx4pSl&ust=1557035820729160*/
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/phones.jpg);
+}
+
+.news{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+	line-height: 1.5;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	cursor: pointer;
+}
+
+
+
+.glossheading h1{
+	text-align: center;
+	padding: 30px;
+	border-top: 2px dashed grey;
+}
+.glossary{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.webterms{
+	display: flex;
+	flex-direction: row;
+	background: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top: 2px dashed grey;
+	border-bottom: 2px dashed grey;
+	transition: background .2s;
+}
+
+/*the content in the even number of the webterms class is reversed to have alternating design*/
+.webterms:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+/*when hovered the background of the webterms changes*/
+
+
+/*when hovered on the webterms a animation is displayed on the h1 */
+.webterms:hover h1{
+	animation-name: glossTextAnimation;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+
+@keyframes glossTextAnimation{
+	20%{color: red; transform: translateY(-1px);}
+	40%{color: blue; transform: translateY(1px);}
+	60%{color: green; transform: translateY(-1px);}
+	80%{color: purple; transform: translateY(1px);}
+	100%, 0%{color: tomato; transform: translateY(-1px);}
+}
+
+
+.webterms img{
+	max-width: calc(100% - 20px);
+	max-height: 200px;
+}
+
+#glossimage{
+	width: 30%;
+	padding: 20px;
+}
+
+#glosscontent{
+	width: 70%;
+	padding: 20px;
+}
+
+
+/*************************** CSS FOR MOBILE ***************************/
+
+@media only screen and (max-width: 600px) {
+
+ .navigation{
+ 	/*the direction of aligning flexbox changed*/
+  	flex-direction: column;
+  	/* the previous sticky position changed*/
+  	position: static;
+  	margin: 0;
+  	margin-bottom: 20px;
+  	width: 100%;
+  	padding: 0;
+  }
+
+  .navImg{
+	width: 30px;
+	margin-top: 0px;
+	transform: translateY(5px) translateX(-10px);
+}
+
+  .navigation #new{
+  	height: 40px;
+  }
+
+.navigation a {
+	margin: auto;
+	text-align: center;
+	width: calc(100% - 20px);
+}
+
+.welcome{
+	padding: 10px;
+	width: calc(100% - 60px);
+	margin: 10px;
+	padding-left: 20px;
+  	padding-right: 20px;
+}
+
+.team{
+	flex-direction: column;
+	width: 100vw;
+}
+
+.teamcard{
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 90%;
+}
+
+.tutorials{
+	flex-direction: column;
+}
+
+.video{
+	max-width: none;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+
+.tutorials .description{
+	padding: 10px;
+}
+
+.compare{
+	flex-direction: column-reverse;
+}
+
+.compare:nth-child(even){
+	flex-direction: column;
+}
+
+.jobs{
+	width: 100%;
+	line-height: 1.7;
+	background: white;
+}
+
+.jobText{
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.jobs img{
+	width: 100%;
+	margin-bottom: -8px;
+}
+
+.suggest{
+	padding: 20px;
+	width: calc(100% - 40px);
+}
+
+.form form{
+	flex-direction: column-reverse;
+}
+
+.form{
+	padding-bottom: 10px;
+}
+
+.form .column1{
+	width: 90%;
+	padding: 5%;
+}
+
+.form .column2{
+	width: 100%;
+}
+
+.form select, .form  input[type=submit]{
+	width: calc(99% - 15px);
+	height: 45px;
+	margin: auto;
+}
+
+.form input[type=text]{
+	width: calc(99% - 28px);
+	padding: 5px;
+	margin: auto;
+	border: 1px solid gray;
+}
+
+
+.webterms, .webterms:nth-child(even){
+	flex-direction: column;
+}
+
+
+
+.glossheading h1{
+	max-width: 99%;
+}
+
+#glossimage{
+	width: 100%;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+}
+
+.webterms img{
+	max-height: none;
+	max-width: calc(100vw - 50px);
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+#glosscontent{
+	width: calc(100% - 40px);
+	padding: 20px;
+	padding-bottom: 30px;
+}
+
+
+	.review{
+		flex-direction:column;
+	}
+
+	.reviewText{
+		width: 100%;
+	}
+
+.jsBox{
+	margin-top: -20px;
+}
+
+.reviewImage{
+	width: 25%;
+	margin: 1.5%;
+}
+
+}
