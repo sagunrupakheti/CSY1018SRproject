@@ -426,7 +426,7 @@ footer  {
 .news2{
 	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiTlOrSnYziAhVNinAKHbkZCHwQjRx6BAgBEAU&ur
 	=https%3A%2F%2Finfocumulus.com%2Fidea-management%2F&psig=AOvVaw0qbDQc018PXsiF2p9_vMci&ust=1557415134455448*/
-	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/idea.);
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/idea.png);
 	margin-top: 10px;
 }
 
@@ -692,13 +692,7 @@ footer  {
 
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
 
-.column2{
-	
+
 }
-
-
-
-
-} 
