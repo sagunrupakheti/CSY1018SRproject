@@ -693,3 +693,14 @@ footer  {
 }
 
 }
+
+@media only screen and (max-width: 1024px){
+
+.column2{
+	height: 10%;
+}
+
+
+
+
+} 
