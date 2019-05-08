@@ -416,19 +416,17 @@ footer  {
 
 
 .news1{
-	/*image from https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjo5oLQnYHiAhVTWisKHXnmBfQQjRx6B
-	AgBEAU&url=https%3A%2F%2Fwww.cnet.com%2Fnews%2Fmark-zuckerberg-has-apologized-now-he-has-to-change-facebook-ca
-	mbridge-analytica%2F&psig=AOvVaw0MoU8Lt4ZEL8uG3A0G_0Gl&ust=1557037151888908*/
-	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/facebook.jpg);
+	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9vamsmYziAhUS63MBHdtKAJwQjRx6BAgBEAU&url=https%3A%2F
+	%2Fthriveglobal.com%2Fstories%2Fthe-importance-of-independence-in-news%2F&psig=AOvVaw3WchVkgcc6fMiy7g-6BAB6&ust=1557413926084563*/
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/news.jpg);
 }
 
 
 
 .news2{
-	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjk5aWT7P_hAhUFEnIKHd6LBWIQjRx6BAgBE
-	AU&url=https%3A%2F%2Fwww.udemy.com%2Fblockchain-cryptocurrency-course-101-for-absolute-beginners%2F&psig=AOvVaw17
-	vsE1IA71alWIDjP6yAd6&ust=1556989522548114*/
-	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/blockchain.jpg);
+	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiTlOrSnYziAhVNinAKHbkZCHwQjRx6BAgBEAU&ur
+	=https%3A%2F%2Finfocumulus.com%2Fidea-management%2F&psig=AOvVaw0qbDQc018PXsiF2p9_vMci&ust=1557415134455448*/
+	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/idea.);
 	margin-top: 10px;
 }
 
@@ -697,7 +695,7 @@ footer  {
 @media only screen and (max-width: 1024px){
 
 .column2{
-	height: 10%;
+	
 }
 
 
