@@ -412,13 +412,12 @@ footer  {
 	background-size: cover;
 	background-position: center;
 	color: white;
-	min-height: 200px;
+	
 }
 
 
 .news1{
-	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9vamsmYziAhUS63MBHdtKAJwQjRx6BAgBEAU&url=https%3A%2F
-	%2Fthriveglobal.com%2Fstories%2Fthe-importance-of-independence-in-news%2F&psig=AOvVaw3WchVkgcc6fMiy7g-6BAB6&ust=1557413926084563*/
+	/*https://lousbarandgrill.com/news-1/*/
 	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/news.jpg);
 }
 
@@ -428,7 +427,7 @@ footer  {
 	/*https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiTlOrSnYziAhVNinAKHbkZCHwQjRx6BAgBEAU&ur
 	=https%3A%2F%2Finfocumulus.com%2Fidea-management%2F&psig=AOvVaw0qbDQc018PXsiF2p9_vMci&ust=1557415134455448*/
 	background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(110, 10, 10, 0.5)), url(images/idea.png);
-	margin-top: 10px;
+	
 }
 
 .news3{
@@ -674,7 +673,9 @@ footer  {
 	margin-top: 20px;
 }
 
-
+.news2{
+	min-height: 200px;
+}
 .glosscontent{
 	width: calc(100% - 40px);
 	padding: 20px;
